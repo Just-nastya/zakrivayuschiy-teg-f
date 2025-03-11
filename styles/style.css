@@ -39,7 +39,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-variation-settings: var(--main-weight);
+  font-variation-settings: 'wght' var(--main-weight);
   background-image: var(--background-img);
   background-position: center;
   background-size: cover;
@@ -184,7 +184,6 @@
 }
 
 .card__icon-button {
-  border: none;
   block-size: 38px;
   background-color: transparent;
   margin-inline-end: 12px;
