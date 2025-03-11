@@ -54,7 +54,7 @@
 .header {
   display: grid;
   gap: 20px;
-  font-family: var(--accent-font); 
+  font-family: var(--accent-font);
   font-variation-settings: var(--title-weight);
   border: 2px solid var(--main-color);
   text-transform: uppercase;
@@ -104,15 +104,15 @@
     top: 25px;
     right: 25px;
     color: var(--main-color);
-    font-family: var(--accent-font); 
+    font-family: var(--accent-font);
     font-variation-settings: var(--main-weight);
     font-size: 14px;
-    opacity: 0.5;   
+    opacity: 0.5;
     text-shadow:
-      -1px 0 var(--border-color), 
-      0 1px var(--border-color), 
-      1px 0 var(--border-color), 
-      0 -1px var(--border-color);  
+      -1px 0 var(--border-color),
+      0 1px var(--border-color),
+      1px 0 var(--border-color),
+      0 -1px var(--border-color);
     z-index: 3;
     mix-blend-mode: hard-light;
 }
@@ -280,7 +280,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-font); 
+  font-family: var(--accent-font);
   font-variation-settings: var(--main-weight);
   font-size: 14px;
   color: var(--background-color);
@@ -342,7 +342,7 @@
 }
 
 .dialog__text {
-  font-family: var(--accent-font); 
+  font-family: var(--accent-font);
   font-size: 14px;
   line-height: 1.15;
   font-variation-settings: var(--main-weight);
