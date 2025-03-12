@@ -9,3 +9,101 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+  
+.card__icon-button:focus-visible {
+    border: 2px solid var(--main-color);
+    transition: border 0.3s ease
+  }
+
+.core {
+    transition: fill 0.3s linear 0.03s;
+  }
+  
+.contour {
+    transition: fill 0.1s linear;
+  }
+  
+.card__icon-button:hover .core {
+    fill: var(--main-color);
+    transition: fill 0.3s linear;
+  }
+  
+.card__icon-button:active .core {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s linear;
+  }
+  
+.main-body {
+    transition: fill 0.3s linear;
+  }
+  
+.card__icon-button:hover .main-body {
+    fill: var(--main-color);
+    transition: fill 0.3s linear 0.05s;
+  }
+  
+.card__icon-button:active .main-body {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s linear 0.05s;
+  }
+  
+.like-icon.is-liked .core {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s linear;
+  }
+  
+.like-icon.is-liked .main-body {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s linear 0.05s;
+  }
+  
+.like-icon.is-liked .contour {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s linear 0.06s;
+  }
+  
+.like-icon.is-liked .heart {
+    transform-origin: center;
+    animation: scale 0.3s ease-in 0.1s;
+  }
+  
+.like-icon.is-liked .sparks {
+    transform-origin: center;
+    animation: opacity 0.3s ease-in 0.3s;
+  }
+
+.page__button:focus-visible {
+    box-shadow: 2px 2px 0 var(--main-color);
+    transition: box-shadow 0.3s ease;
+}
+
+.page__button:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--main-color);
+    transform-origin: left;
+    transition: translate 0.5s ease-in-out;
+    translate: -100%;
+}
